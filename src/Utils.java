@@ -1,8 +1,7 @@
 public class Utils {
 
-    //IMPORTANT! switch used with no better purpose, could be implemented using below 2 lines of code
+    //IMPORTANT! switch used with no better purpose, could be implemented using commented below 2 lines of code
     private double getFinalPrice(Product product) {
-        int a = product.getCategory().vat;
         return switch (product.getCategory().vat) {
             case 23 -> 1.23 * product.getPrice();
             case 8 -> 1.08 * product.getPrice();
